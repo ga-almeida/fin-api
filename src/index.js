@@ -109,7 +109,7 @@ app.get('/statement/date', verifyIfExistsAccountCPF, (request, response) => {
       new Date(dateFormat).toDateString()
   );
 
-  return response.status(200).json(customer.statement);
+  return response.status(200).json(statement);
 });
 
 app.listen(3333);
